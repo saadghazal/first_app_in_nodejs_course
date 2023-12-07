@@ -42,3 +42,11 @@ console.log(copiedPerson)
 const hobbies = ['Cars','Football'];
 const copiedArray = [...hobbies];
 console.log(copiedArray)
+
+//Rest Operator
+
+const toArray = (...args)=>{
+return args
+}
+
+console.log(toArray(3,6,10,0.394683094684309,))

@@ -25,12 +25,20 @@ const person = {
     }
 }*/
 
-/*
-3- the this keyword in here referse to the person object itself so the output will be Hi, I'm Max
+
+// 3- the this keyword in here referse to the person object itself so the output will be Hi, I'm Max
+// The Spread Operator
 const person = {
     name: "Max",
     age: 29,
     greet(){
         console.log("Hi, I'm "+this.name)
     }
-}*/
+}
+
+const copiedPerson = {...person};
+
+console.log(copiedPerson)
+const hobbies = ['Cars','Football'];
+const copiedArray = [...hobbies];
+console.log(copiedArray)
